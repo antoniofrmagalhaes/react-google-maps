@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import React from 'react';
 
 import GlobalStyles from './styles';
