@@ -1,68 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## React Google Map
+##### This application implements google maps and google places api
 
-## Available Scripts
+Search for places using google places api.
 
-In the project directory, you can run:
+![places-autocomplete](https://user-images.githubusercontent.com/49319968/93828962-7a658e00-fc3a-11ea-8818-9c613bb5171c.png)
 
-### `yarn start`
+Click to pin, click on pin to see the lat and lng values of that specific location.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Screenshot from 2020-09-21 18-41-10 (1)](https://user-images.githubusercontent.com/49319968/93829709-370c1f00-fc3c-11ea-8146-679321c00a74.png)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Installation
 
-### `yarn test`
+OS X, Windows or Linux:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+npm install or yarn
+```
+## GOOGLE MAPS API KEY
 
-### `yarn build`
+In order to run this applicatuib correctly, you must provide your own google maps api key, can be created here: 
+https://developers.google.com/maps/documentation/javascript/get-api-key
+after create your google maps api key, you must enable maps javascript api, places api and geocoding api.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### How to enable Google Maps API?
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#### Enable an API
+* Go to the API Console.
+* From the projects list, select a project or create a new one.
+* If the APIs & services page isn't already open, open the console left side menu and select APIs & services, and then select Library.
+* Click the API you want to enable...
+* Click ENABLE.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Local Enviromnents
+Your API key must be set on the .env.local file, you will need to create .env.local file and place your API key just like this:
+> REACT_APP_GOOGLE_MAPS_API_KEY=MKSEkaweiaasdoOAIoWIO.zwmKakkswoiHUE
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+##### Once followed these steps, you can run the following command to start the development application.
+> yarn start
