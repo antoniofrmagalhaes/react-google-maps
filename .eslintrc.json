@@ -6,7 +6,7 @@
   "extends": [
     "plugin:react/recommended",
     "airbnb",
-    "prettier/@typescript-eslint",
+    "prettier/react",
     "plugin:prettier/recommended",
     "plugin:react/recommended"
   ],
@@ -28,13 +28,16 @@
   ],
   "rules": {
     "prettier/prettier": "error",
+    "no-console": "off",
+    "camelcase": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [
       1,
       {
         "extensions": [
-          ".tsx"
+          ".tsx",
+          ".js"
         ]
       }
     ],
